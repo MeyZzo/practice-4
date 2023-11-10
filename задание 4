@@ -2,17 +2,14 @@
 using namespace std;
 
 int main() {
-	setlocale(0, "");
-	int suma = 0;
-	int resultat = 1;
+	const int n1 = 10;
+	long long n2 = 1;
 
-	for (int i = 1; i <= 10; i++) 
+	for (int i = 1; i <= n1; i++) 
 	{
-		suma += i;
+		n2 *= (i * (i + 1)) / 2;
 	}
+	cout << n2 << endl;
 
-	resultat *= (1 + 2) * (1 + 2 + 3) * suma;
-	cout << "Получается: " << resultat << endl;
-
-	return 0;
+		return 0;
 }
