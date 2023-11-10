@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	setlocale(0, "");
+	int suma = 0;
+	int resultat = 1;
+
+	for (int i = 1; i <= 10; i++) 
+	{
+		suma += i;
+	}
+
+	resultat *= (1 + 2) * (1 + 2 + 3) * suma;
+	cout << "Получается: " << resultat << endl;
+
+	return 0;
+}
